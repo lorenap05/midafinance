@@ -1,5 +1,10 @@
 import midaLogo from "@/assets/mida-logo-transparent.png";
 import dashboardMockup from "@/assets/dashboard-mockup.png";
+import imagery1 from "@/assets/imagery_1.png";
+import imagery2 from "@/assets/imagery_2.png";
+import imagery3 from "@/assets/imagery_3.png";
+import imagery4 from "@/assets/imagery_4.png";
+import imagery6 from "@/assets/imagery_6.png";
 import abstractFinance from "@/assets/abstract-finance.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { ArrowRight, TrendingUp, BarChart3, Bell, Sparkles, Shield, Lock, CheckCircle } from "lucide-react";
@@ -43,7 +48,7 @@ const Hero = () => (
             <span className="text-primary">real life.</span>
           </h1>
           <p className="font-body text-lg text-muted-foreground mt-6 max-w-lg leading-relaxed animate-fade-up-delay-1">
-            Mida helps you plan ahead, track spending, and stay in control — without the stress. Built for variable income earners in Brazil.
+            Mida helps you plan ahead, track spending, and stay in control. 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-10 animate-fade-up-delay-2">
             <a
@@ -64,7 +69,7 @@ const Hero = () => (
         <div className="relative animate-fade-up-delay-2">
           <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border">
             <img
-              src={dashboardMockup}
+              src={imagery2}
               alt="Mida financial dashboard showing spending categories and income forecasting"
               width={1280}
               height={800}
@@ -96,14 +101,11 @@ const ProblemSection = () => {
   return (
     <section ref={ref} className="py-28 px-6">
       <div className="container mx-auto max-w-5xl">
-        <p className={`font-body text-sm font-semibold text-primary tracking-widest uppercase mb-4 text-center transition-all duration-700 ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
-          The problem
-        </p>
         <h2 className={`font-heading text-3xl md:text-5xl text-center font-semibold text-foreground mb-4 transition-all duration-700 ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
-          Sound familiar?
+          Traditional budgeting tools weren't built for people with variable income. Mida is.
         </h2>
         <p className={`font-body text-muted-foreground text-center max-w-2xl mx-auto mb-16 transition-all duration-700 ${isVisible ? "animate-fade-up-delay-1" : "opacity-0"}`}>
-          Traditional budgeting tools weren't built for people with variable income. Mida is.
+
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
@@ -241,7 +243,7 @@ const Benefits = () => {
           <div className={`transition-all duration-700 ${isVisible ? "animate-fade-up-delay-2" : "opacity-0"}`}>
             <div className="rounded-2xl overflow-hidden border border-border">
               <img
-                src={abstractFinance}
+                src={imagery6}
                 alt="Financial data visualization"
                 loading="lazy"
                 width={1280}
@@ -288,11 +290,17 @@ const TrustSection = () => {
             </ul>
           </div>
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-sm aspect-square rounded-3xl bg-gradient-to-br from-primary/5 to-accent/40 border border-border flex items-center justify-center">
-              <div className="text-center">
-                <Lock className="w-16 h-16 text-primary/40 mx-auto mb-4" />
-                <p className="font-body text-sm text-muted-foreground">Open Finance Certified</p>
-              </div>
+            <div className="w-full max-w-sm aspect-square rounded-3x1 bg-gradient-to-br from-primary/5 to-accent/40 border border-border flex items-center justify-center">
+            <div className="rounded-2x1 overflow-hidden border border-border">
+              <img
+                src={imagery3}
+                alt="Financial data visualization"
+                loading="lazy"
+                width={1280}
+                height={720}
+                className="w-full h-auto"
+              />
+            </div>
             </div>
           </div>
         </div>
